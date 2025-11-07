@@ -1,0 +1,10 @@
+wdd130/
+│
+├── index.html
+│
+├── styles/
+│   └── styles.css
+│
+└── images/
+    ├── profile.jpg
+    └── nigeria.jpg
