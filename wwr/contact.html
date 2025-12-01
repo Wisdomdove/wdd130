@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="NG">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Wild Water Rafting for questions, reservations, or suggestions.">
+  <title>Contact Us | Wild Water Rafting</title>
+  <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Wild Water Rafting</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section id="company-info">
+      <h2>Contact Us</h2>
+      <p>123 River Lane<br>
+         Raftingville, CO 80000</p>
+      <p>Tel: 123-456-7890<br>
+         123-456-7891</p>
+      <p>Email: <a href="mailto:info@rafting.com">info@rafting.com</a></p>
+
+      
+    <!-- Responsive map -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49434.82188459827!2d3.6067748087110862!3d6.843994969475583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1764170532296!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Employee Profiles -->
+    <section id="employees">
+      <h2>Our Team</h2>
+      <div class="employee-container">
+        <figure>
+          <img src="images/employee1.jpg" alt="John Doe, Guide">
+          <figcaption>John Doe – Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Jane Doe, Operations Manager">
+          <figcaption>Jane Doe – Operations Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Gary Smith, Marketing Director">
+          <figcaption>Gary Smith – Marketing Director</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of Message:</p>
+        <input type="radio" id="general" name="purpose" value="general" required>
+        <label for="general">General Inquiry</label>
+
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        <label for="reservation">Reservation Question</label>
+
+        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+        <label for="suggestion">Website Suggestion</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Wild Water Rafting. All rights reserved.</p>
+  </footer>
+</body>
+</html>
