@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="NG">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WWR Rafting — Trips</title>
+  <meta name="description" content="Detailed descriptions and booking information for WWR Rafting trips: Class II-IV adventures, family floats, full-day expeditions." />
+  <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/byui-logo.png" alt="BYU-Idaho logo" class="logo">
+      <h1 class="site-title">WWR Rafting</h1>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html" aria-current="page">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="trips-intro">
+      <h2>Find your perfect rafting trip</h2>
+      <p>We offer beginner-friendly floats, family runs, and full-day adrenaline expeditions. All trips include guides and safety gear.</p>
+      <a class="btn btn-primary" href="contact.html">Contact Us to Book</a>
+    </section>
+
+    <!-- Trip cards -->
+    <section class="trips-grid" aria-labelledby="trips-heading">
+      <h2 id="trips-heading">Featured Trips</h2>
+
+      <article class="trip-card">
+        <img src="images/trip-family-600.jpg" alt="Family rafting group on calm rapids" class="trip-image">
+        <div class="trip-content">
+          <h3>Family Float — Gentle Run</h3>
+          <p>Duration: 2 hours · Difficulty: Class I-II · Perfect for kids and first-timers. Scenic float with short splashy sections.</p>
+          <ul>
+            <li>Minimum age: 6</li>
+            <li>Price: $45 per person</li>
+            <li>Included: guide, helmet, life vest</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/trip-halfday-600.jpg" alt="Whitewater half-day trip raft on large rapid" class="trip-image">
+        <div class="trip-content">
+          <h3>Half-Day Rapids — Intermediate</h3>
+          <p>Duration: 4 hours · Difficulty: Class III · For those who want action but not a full day.</p>
+          <ul>
+            <li>Minimum age: 12</li>
+            <li>Price: $85 per person</li>
+            <li>Included: guide, wetsuit rental available</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/trip-fullday-600.jpg" alt="Guided raft team navigating large canyon rapids" class="trip-image">
+        <div class="trip-content">
+          <h3>Full-Day Expedition — Advanced</h3>
+          <p>Duration: 8+ hours · Difficulty: Class IV · Remote canyon, multiple big rapids, meals included.</p>
+          <ul>
+            <li>Minimum age: 16</li>
+            <li>Price: $180 per person</li>
+            <li>Included: guide, lunch, advanced safety gear</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Trips table -->
+    <section class="trips-table" aria-labelledby="table-heading">
+      <h2 id="table-heading">Trips at a glance</h2>
+      <table>
+        <caption>WWR Rafting — Trip information</caption>
+        <thead>
+          <tr>
+            <th scope="col">Trip</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Min Age</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Family Float — Gentle Run</td>
+            <td>2 hours</td>
+            <td>Class I-II</td>
+            <td>6</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>Half-Day Rapids — Intermediate</td>
+            <td>4 hours</td>
+            <td>Class III</td>
+            <td>12</td>
+            <td>$85</td>
+          </tr>
+          <tr>
+            <td>Full-Day Expedition — Advanced</td>
+            <td>8+ hours</td>
+            <td>Class IV</td>
+            <td>16</td>
+            <td>$180</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact-cta">
+      <h2>Ready to go?</h2>
+      <p>Have questions or want to reserve a group date? Contact us — we'll help you choose the right trip.</p>
+      <a class="btn btn-primary" href="contact.html">Contact Us</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> WWR Rafting</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

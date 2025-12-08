@@ -1,0 +1,64 @@
+/* Employee Profiles */
+.employee-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.employee-container figure {
+  text-align: center;
+  flex: 1;
+}
+
+.employee-container img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive map */
+iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}

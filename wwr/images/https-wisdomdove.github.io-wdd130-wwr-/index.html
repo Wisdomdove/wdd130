@@ -1,0 +1,118 @@
+!doctype html>
+<html lang="NG">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WWR Rafting — Home</title>
+  <meta name="description" content="WWR Rafting — whitewater rafting adventures, trips, and sign-ups. Finish strong with an unforgettable river journey." />
+  <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/byui-logo.png" alt="BYU-Idaho logo" class="logo">
+      <h1 class="site-title">WWR Rafting</h1>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <img src="images/hero-1200.jpg" alt="A raft of people maneuvering a whitewater rapid" class="hero-image">
+      <div class="hero-text" id="hero-heading">
+        <h2>Life is a journey — finish strong</h2>
+        <p>Join us for safe, guided whitewater rafting trips for all skill levels.</p>
+        <a class="btn btn-primary" href="trips.html">Explore Trips</a>
+      </div>
+    </section>
+
+    <!-- Newsletter & CTA -->
+    <section class="newsletter-cta">
+      <div class="newsletter">
+        <h3>Sign up for news & trip offers</h3>
+        <form action="contact.html" method="get" class="newsletter-form" aria-label="Newsletter signup">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+
+      <aside class="cta-card" aria-labelledby="cta-heading">
+        <h3 id="cta-heading">Ready for an adventure?</h3>
+        <p>Check our trips and find the right run for you. Families, groups, and thrill-seekers welcome.</p>
+        <a class="btn btn-secondary" href="trips.html">See Trips & Book</a>
+      </aside>
+    </section>
+
+    <!-- Grid content -->
+    <section class="grid-features" aria-labelledby="grid-heading">
+      <h2 id="grid-heading">What we offer</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/grid-1-400.jpg" alt="Guide helping rafters prepare helmets" class="card-image">
+          <div class="card-body">
+            <h3>Guided Trips</h3>
+            <p>Experienced guides, safety-first instruction, and equipment provided for all trips.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/grid-2-400.jpg" alt="Scenic mountain river valley" class="card-image">
+          <div class="card-body">
+            <h3>Scenic Rivers</h3>
+            <p>Beautiful routes through mountain canyons and lively rapids—perfect for nature lovers.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/grid-3-400.jpg" alt="Family sitting beside a raft smiling" class="card-image">
+          <div class="card-body">
+            <h3>Family & Group Packages</h3>
+            <p>Custom group bookings, discounts for families and youth groups. Book early for availability.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote">
+      <blockquote>
+        "Life is a journey, not a destination... We must finish strong."
+        <cite>— President Thomas S. Monson, "Finishers Wanted", Ensign, June 2001</cite>
+      </blockquote>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> WWR Rafting</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
